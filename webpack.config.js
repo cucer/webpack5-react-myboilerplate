@@ -4,6 +4,7 @@ const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin'
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin'); // for index.html
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 /********************** Variables **************************/
 const isDevelopment = process.env.NODE_ENV !== 'production';
@@ -16,9 +17,10 @@ const plugins = [
     template: './src/index.html',
     favicon: './src/images/favicon.ico',
   }),
+  new TerserPlugin(),
 ];
 
-if (process.env.NODE_ENV === 'production') {
+if (!isDevelopment) {
   target = 'browserslist';
 }
 
@@ -77,5 +79,14 @@ module.exports = {
     port: 3000,
     static: './dist',
     hot: true,
+  },
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new TerserPlugin({
+        minify: TerserPlugin.uglifyJsMinify,
+        terserOptions: {},
+      }),
+    ],
   },
 };
