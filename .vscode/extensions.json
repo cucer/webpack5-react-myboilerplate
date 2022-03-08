@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "formulahendry.auto-close-tag",
+    "steoates.autoimport",
+    "mgmcdermott.vscode-language-babel",
+    "dsznajder.es7-react-js-snippets",
+    "dbaeumer.vscode-eslint",
+    "abusaidm.html-snippets",
+    "skyran.js-jsx-snippets",
+    "PKief.material-icon-theme",
+    "esbenp.prettier-vscode",
+    "formulahendry.terminal"
+  ]
+}
