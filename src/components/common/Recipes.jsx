@@ -1,15 +1,15 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 const chocolate = {
   calorie: 200,
   year: 2022,
-  type: "Chocolate",
+  type: 'Chocolate',
 };
 
 const darkchocolate = {
   ...chocolate,
-  color: "Black",
-  brand: "Godiva",
+  color: 'Black',
+  brand: 'Godiva',
 };
 
 const Recipes = () => {

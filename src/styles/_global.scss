@@ -1,4 +1,4 @@
-@use "variables";
+@use 'variables';
 
 body {
   margin: 0;
@@ -17,5 +17,5 @@ button {
 }
 
 ul {
-  list-style-image: url("../images/choco-32.png");
+  list-style-image: url('../images/choco-32.png');
 }
