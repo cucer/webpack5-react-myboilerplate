@@ -12,6 +12,10 @@ const darkchocolate = {
   brand: 'Godiva',
 };
 
+const item = {};
+
+console.log(item);
+
 const Recipes = () => {
   const [recipe, setRecipe] = useState({});
   return (

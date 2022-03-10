@@ -20,10 +20,19 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
+  "settings": {
+    "react": {
+      "fragment": "Fragment",
+      "version": "detect"
+    }
+  },
   "rules": {
     "prettier/prettier": "error",
-    "no-unused-vars": "warn",
+    "no-unused-vars": "error",
     "no-console": "warn",
-    "react/prop-types": 1
+    "react/prop-types": 1,
+    "prefer-const": "error",
+    "no-var": "error",
+    "no-new-object": "error"
   }
 }
