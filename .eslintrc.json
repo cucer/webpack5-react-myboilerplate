@@ -28,11 +28,23 @@
   },
   "rules": {
     "prettier/prettier": "error",
-    "no-unused-vars": "error",
+    "no-unused-vars": "warn",
     "no-console": "warn",
     "react/prop-types": 1,
     "prefer-const": "error",
     "no-var": "error",
-    "no-new-object": "error"
+    "no-new-object": "error",
+    "object-shorthand": "warn",
+    "no-array-constructor": "error",
+    "array-callback-return": "error",
+    "prefer-destructuring": "warn",
+    "prefer-template": "warn",
+    "no-new-func": "error",
+    "prefer-arrow-callback": "error",
+    "no-duplicate-imports": "error",
+    "no-unneeded-ternary": "error",
+    "no-mixed-operators": "error",
+    "brace-style": "warn",
+    "no-else-return": "error"
   }
 }

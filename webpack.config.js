@@ -25,7 +25,11 @@ if (!isDevelopment) {
 }
 
 if (process.env.SERVE | isDevelopment) {
-  plugins.push(new ReactRefreshWebpackPlugin());
+  plugins.push(
+    new ReactRefreshWebpackPlugin({
+      overlay: false, // for this error (Wrong url scheme for WebSocket ) or install 0.5.0-rc.5
+    })
+  );
 }
 
 /********************** Config **************************/
@@ -64,8 +68,8 @@ module.exports = {
       },
     ],
   },
-  plugins: plugins,
-  target: target,
+  plugins,
+  target,
   resolve: {
     extensions: ['.js', '.jsx'],
     // alias: {
